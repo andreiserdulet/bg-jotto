@@ -1,0 +1,29 @@
+.form-jotto {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 20px;
+
+  .input-jotto {
+    height: 50px;
+    text-align: center;
+    font-size: 30px;
+    background: rgb(216, 230, 255);
+    border: none;
+  }
+  .input-button-jotto {
+    font-size: 25px;
+    transition: 1s ease;
+    &:hover {
+      background: cornflowerblue;
+      color: white;
+    }
+  }
+}
+.input-error {
+  font-size: 25px;
+  text-align: center;
+  border: 1px solid red;
+  background-color: crimson;
+  color: white;
+}

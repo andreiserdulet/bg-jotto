@@ -1,0 +1,74 @@
+.guessed-words-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.notebook-paper {
+  width: 70%;
+  padding: 50px;
+  background: rgb(255, 255, 202);
+  border-radius: 5px;
+  box-shadow: 0 4px 10px #eaeaea;
+  @media (max-width: 800px) {
+    width: 100%;
+    padding: 0;
+  }
+
+  header {
+    width: 100%;
+    .title-jotto {
+      width: 210px;
+      margin: 0 auto;
+      font-size: 30px;
+      color: cornflowerblue;
+      border-bottom: 2px solid black;
+    }
+  }
+
+  .content-row-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.title-row {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  border-bottom: 2px solid black;
+  @media (max-width: 800px) {
+    font-size: 10px;
+    align-items: center;
+  }
+}
+.content-row {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  border-bottom: 2px dotted rgb(0, 106, 255);
+  letter-spacing: 2px;
+  font-weight: 200;
+  align-items: center;
+}
+@media (max-width: 480px) {
+  .guessed-words-container {
+    .notebook-paper {
+      .wrapperr {
+        .title-row {
+          box-sizing: border-box;
+          padding: 4px !important;
+          justify-content: space-between;
+        }
+        .content-row-container {
+          box-sizing: border-box;
+          padding: 4px !important;
+          justify-content: space-between;
+        }
+      }
+    }
+  }
+}
